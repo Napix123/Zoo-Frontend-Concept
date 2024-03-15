@@ -1,0 +1,146 @@
+$primarno: #2b6dd6;
+$svetlo: #FEF4F5;
+$mracno: #282F34;
+$font: 1.1em;
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    z-index: 100;
+}
+
+/* Dugme */
+.btn {
+    font-weight: 500;
+    transition: .5s;
+
+    .btn-primary,
+    .btn-secondary {
+        color: $svetlo;
+    }
+}
+
+.btn-square {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 45px;
+    height: 45px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+/* Nav */
+.navbar {
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 25px 0;
+        margin-right: 30px;
+        color: $svetlo;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        outline: none;
+
+        .nav-item.nav-link:hover,
+        .nav-item.nav-link.active {
+            color: $primarno;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar .navbar-nav .nav-link {
+    color: $mracno;
+    font-weight: 500;
+}
+
+/* Header */
+.header {
+    background: url(../img/banner.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
+.footer {
+
+    .btn.btn-social {
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $svetlo;
+        border: 1px solid #FFFFFF;
+        transition: .3s;
+    }
+
+    .btn.btn-social:hover {
+        color: $primarno;
+    }
+
+    .btn.btn-link {
+        display: block;
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: capitalize;
+        transition: .3s;
+    }
+
+    .btn.btn-link::before {
+        position: relative;
+        font-weight: 900;
+        margin-right: 10px;
+    }
+
+    .btn.btn-link:hover {
+        color: $primarno;
+        letter-spacing: 1px;
+        box-shadow: none;
+    }
+}

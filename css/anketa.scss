@@ -1,0 +1,30 @@
+@import "../css/style.scss";
+
+$boja: #808080;
+$margin: 5%;
+$padding: 5%;
+$radius: 5%;
+
+body {
+    #dugme {
+        width: 100%;
+    }
+
+    #stat {
+        display: none;
+    }
+
+    .anketa {
+        margin: $margin;
+        padding: $padding;
+        border-radius: $radius;
+        color: $mracno;
+        font-weight: bold;
+        background-color: $boja;
+        font-size: $font * 1.5;
+    }
+
+    select {
+        width: 2em;
+    }
+}

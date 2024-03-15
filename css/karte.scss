@@ -1,0 +1,25 @@
+@import "../css/style.scss";
+
+.karte-item {
+    padding: 45px 30px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.7);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .display-1 {
+        color: transparent;
+        -webkit-text-stroke: 2px $primarno;
+    }
+}
+
+
+
